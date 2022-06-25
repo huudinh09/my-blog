@@ -1,0 +1,116 @@
+.overlay{
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 20; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    animation: fadeIn 0.3s linear;
+}
+
+.wrapper {
+    position: absolute;
+    left: 0;
+    background-color:var(--white);
+    z-index: 30;
+    height: calc(200vh + 1000px);
+    width: 50%;
+    animation: fadeRight 0.3s linear;
+}
+
+@media (min-width: 1023px){
+    .wrapper{
+        display: none;
+    }
+    .overlay{
+        display: none;
+    }
+}
+@media  (min-width: 740px) and (max-width: 1023px) {
+    .wrapper{
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px){
+    .wrapper{
+        width: 65%;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeRight {
+    from{
+        transform: translateX(-100px)
+    }
+    to{
+        transform: translateX(0)
+    }
+}
+.logo-wrapper{
+    height:110px;
+    width: 100%;  
+    display: flex  
+}
+
+
+.logo{
+    height:100%;
+    width: 40%;
+    margin-left: 15px;
+}
+
+.title-blog{
+    text-align: left;
+    height: auto;
+    line-height: 110px;
+    margin-left: 15px;
+    cursor: default;
+}
+
+.first{
+    color: var(--primary-color);
+    margin-right:5px;
+}
+.icon{
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    font-size:20px;
+    color: var(--header-icon);
+}
+.icon:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+}
+
+.title{
+    height: 35px;
+    width: calc(100% - 20px);
+    margin: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.title:hover{
+    background-color: var(--primary-color);
+    color: var(--white)
+}

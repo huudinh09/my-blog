@@ -1,0 +1,38 @@
+.slider{
+    width: 92%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+.header{
+    z-index: 10;
+}
+.line-header{
+    height:60px;
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    position: absolute;
+}
+
+.info-detail{
+    margin-top:295px;
+}
+
+.a{
+    justify-content:center;
+}
+
+.info-bottom{
+    margin-top: 80px;
+
+}
+
+.news{
+    margin-top:295px;
+
+}
+
+.information{
+    z-index: 1;
+}
