@@ -1,0 +1,28 @@
+.wrapper{
+    position: fixed;
+    bottom: 35px;
+    right: 23px;
+    background-color: var(--primary-color);
+    color: white;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 23px;
+    border-radius: 50%;
+}
+.wrapper i {
+    height:24px;
+    width: 24px;
+    animation: srollTop 0.5s alternate ease infinite ;
+    
+}
+
+@keyframes srollTop {
+    from{
+        transform: translateY(2px)
+    }
+    to{
+        transform: translateY(-1px);
+    }
+}

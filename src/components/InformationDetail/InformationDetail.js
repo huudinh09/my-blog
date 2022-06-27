@@ -65,10 +65,10 @@ function InformationDetail() {
                     </Tippy>
                     <Tippy
                         placement='bottom'
-                        content='Java'
+                        content='React'
                     >
-                        <div className={cx('icon', 'java')}>
-                            <i className="fa-brands fa-java"></i>
+                        <div className={cx('icon', 'react')}>
+                            <i className="fa-brands fa-react"></i>
                         </div>
                     </Tippy>
                 </div>

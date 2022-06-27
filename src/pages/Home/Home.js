@@ -7,6 +7,7 @@ import InformationDetail from '../../components/InformationDetail/InformationDet
 import BestPost from '../../components/BestPost/BestPost.js'
 import Post from '../../components/Post/Post.js'
 import styles from './Home.module.css'
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop.js'
 
 import classNames from 'classnames/bind';
 import AOS from 'aos';
@@ -22,7 +23,7 @@ function Home() {
     const handleShowNavigation = (data) => {
         setShowNavigation(data)
     }
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
 
     useEffect(()=>{
         AOS.init({
@@ -47,7 +48,7 @@ function Home() {
                 </div>
                 <div className={cx('row')}>
                     <div className={cx('col', 'l-8')}>
-                        <div data-aos="fade-down-right">
+                        <div data-aos="fade-down-right" className={cx('posts')}>
                             <Post
                                 title='DevOps Toolchain Enhancement'
                                 img='https://www.ibm.com/blogs/cloud-archive/wp-content/uploads/2016/10/devops_arch_edited.png'
@@ -112,8 +113,60 @@ function Home() {
                         </div>
                         
                     </div>
+
+                    <div className={cx('sidebar','col', 'l-4')}>
+                        <div className={cx('popular-posts')}>
+                            <p>Popular Posts</p>
+                            <div data-aos="fade-down-left">
+                                <Post
+                                    title='How to switch career to software testing even if you’re old or from non-IT background'
+                                    img='https://www.asktester.com/wp-content/uploads/2018/08/old.jpg'
+                                    author='Admin'
+                                    like='120'
+                                    compact=' I sometimes receive questions from readers asking how to get started in software testing. 
+                                    Most of them are from freshers or newly graduated. Particularly some of the questions come 
+                                    from those who would like to switch their careers to software testing when they are old or they are from non-IT background.'
+                                />
+                            </div>
+                            <div data-aos="fade-down-left">
+                                <Post
+                                    title='2017 Year In Review: a Failed Year'
+                                    img='https://www.asktester.com/wp-content/uploads/2017/12/2017-2018-year-in-review.jpg'
+                                    author='Admin'
+                                    like='200'
+                                    compact='December is one of my favorite months of the year. 
+                                            It’s not only because we have Christmas ( I don’t believe in Santa Claus by the way :D) 
+                                            and New Year holiday but also a great time for me to sit back, 
+                                            see how have been doing this year and plan for a new year with more success'
+                                />
+                            </div>
+                            <div data-aos="fade-down-left">
+                                <Post
+                                    title='7 common software testing activities you should know before you start'
+                                    img='https://www.asktester.com/wp-content/uploads/2018/05/binocular.jpg'
+                                    author='Admin'
+                                    like='200'
+                                    compact='According to State of Testing report, software testing industry is growing like never before. 
+                                            It’s not surprising that more and more people want to become a tester too. 
+                                            Testers also often send me emails sharing how much they are enjoying their journeys'
+                                />
+                            </div>
+                            <div data-aos="fade-down-left">
+                                <Post
+                                    title='Automated test: Coding is Now a Job for Everyone'
+                                    img='https://www.asktester.com/wp-content/uploads/2018/05/automated-test-2.jpeg'
+                                    author='Huu Dinh'
+                                    like='900'
+                                    compact='Everywhere you look things are becoming more and more automated. 
+                                            Gone are the days of cashier workers and factory workers.
+                                            While you might see politicians arguing about automation on TV, is this new technology really a bad thing?'
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <ScrollToTop/>
         </>
     );
 }

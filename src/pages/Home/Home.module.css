@@ -19,8 +19,8 @@
     margin-top:295px;
 }
 
-.a{
-    justify-content:center;
+.posts{
+    margin-top:70px;
 }
 
 .info-bottom{
@@ -35,4 +35,14 @@
 
 .information{
     z-index: 1;
+}
+
+.sidebar{
+    margin-top:70px;
+}
+
+.popular-posts > p {
+    font-size:20px;
+    font-weight:600;
+    margin-bottom: 20px;
 }
