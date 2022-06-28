@@ -1,4 +1,9 @@
-.wrapper{
+
+@media (max-width: 740px) {
+    .wrapper{
+        margin-top:40px
+    }
+    
 }
 
 .img-wrapper{

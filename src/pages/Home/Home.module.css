@@ -40,8 +40,17 @@
 .sidebar{
     margin-top:70px;
 }
+.title-popular{
+    display: flex;
+    font-size: 20px;
+}
+.title-popular > i {
+    line-height: 1.5rem;
+    margin-left: 10px;
+    color: #eee31f;
+}
 
-.popular-posts > p {
+.title-popular > p {
     font-size:20px;
     font-weight:600;
     margin-bottom: 20px;

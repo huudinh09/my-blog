@@ -19,8 +19,99 @@
     .post-info{
         width: 85%;
     }
+    .time{
+        display: none;
+    }
 }
 
 .post-info i{
     padding-right: 4px;
+}
+
+
+
+.like-wrapper{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-color: var(--white);
+    text-align: center;
+    line-height:1.5rem;
+    border-radius: 50%;
+    color: var(--header-icon);
+    z-index: 9;
+
+}
+
+.like-wrapper i{
+    padding : 0;
+    z-index: 9;
+
+}
+
+.flex{
+    display: flex;
+}
+
+.flex span {
+    margin-left:5px;
+}
+
+.liked i {
+    color: #fe2c55;
+    z-index: 9;
+}
+
+.animation span {
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+    
+}
+.animation{
+    position: absolute;
+
+    top:50%;
+    transform: translateY(-50%);
+    height: 35px;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.animation span {
+    position: absolute;
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: animate 1s ease-in-out ;
+}
+
+.span1, .span3, .span5, .span7{
+    background-color: #fe2c55;
+
+}
+
+.span2, .span4, .span6, .span8{
+    background-color: white;
+    
+}
+
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg) translateX(20px) ;
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0.1;
+        transform: rotate(calc(360deg / 8 * var(--i))) translateX(20px) ;
+    }
 }

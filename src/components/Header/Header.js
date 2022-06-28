@@ -47,7 +47,7 @@ function Header(pros) {
                     </div>
                 </Tippy1>
             </div>
-            <div className={cx('contact-link','col' , 'l-o-10' , 'l-2', 'm-4' ,'m-o-8' , 'c-5', 'c-o-7' )}>
+            <div className={cx('contact-link','col' , 'l-o-10' , 'l-2', 'm-4' ,'m-o-8' , 'c-6', 'c-o-6' )}>
                 <div className={cx('row')}>
                     <Tippy1
                         content='Facebook'

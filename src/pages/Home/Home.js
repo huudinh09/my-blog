@@ -113,10 +113,12 @@ function Home() {
                         </div>
                         
                     </div>
-
                     <div className={cx('sidebar','col', 'l-4')}>
                         <div className={cx('popular-posts')}>
-                            <p>Popular Posts</p>
+                            <div className={cx('title-popular')}>
+                                <p>Popular Posts</p>
+                                <i className="fa-solid fa-star"></i>
+                            </div>
                             <div data-aos="fade-down-left">
                                 <Post
                                     title='How to switch career to software testing even if you’re old or from non-IT background'
