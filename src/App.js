@@ -1,15 +1,14 @@
-import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
-import Home from './pages/Home/Home.js'
+import Home from './pages/Home/Home.js';
 import InformationDetail from './components/InformationDetail/InformationDetail.js';
 
 function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/my-blog" element={<Home/>}/>
-                <Route path="/s" element={<InformationDetail/>}/>
-
+                <Route path="/" element={<Home />} />
+                <Route path="/s" element={<InformationDetail />} />
             </Routes>
         </Router>
     );

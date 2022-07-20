@@ -1,7 +1,6 @@
 {
   "name": "my-blog",
   "version": "0.1.0",
-  "homepage": "https://huudinh09.github.io/my-blog/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -11,7 +10,6 @@
     "aos": "^3.0.0-beta.6",
     "classnames": "^2.3.1",
     "country-flag-icons": "^1.5.5",
-    "gh-pages": "^4.0.0",
     "jquery": "^3.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -27,9 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
